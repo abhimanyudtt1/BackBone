@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<checkpoint>
+    <class name='namenode' logging = 'notice'>
+        <script>checkpoints/namenode/ConnectionChecker.py</script>
+        <script>checkpoints/namenode/DiskHealthChecker.py</script>
+        <script>checkpoints/namenode/cpuMem.py</script>
+        <script>checkpoints/namenode/processChecker.py</script>
+    </class>
+
+    <class name='hdfs' logging = 'debug'>
+        <script>checkpoints/hdfs/checkSafeMode.py</script>
+    </class>
+</checkpoint>

@@ -1,0 +1,31 @@
+# This is a simple config file to give variables to be used in the running of the check points 
+
+# A variable can be added in this config file in the following ways :
+
+
+# var = value # single value definition
+# var = value1,value2,value3,... for a list type definition
+# var1,var2,var2,var4 = [value1,value2,value3],value4,value5,calue6  for multiple value definition 
+
+# '#' can be used to comment a line 
+
+
+# A variable can be given a value in the above way. In case a variable is not defined then the value given to it is by default None 
+
+nn_pm_processes = ['tps','pgsql']
+
+coll_pm_processes = ['collector','samplicate']
+
+coll_processes = ['collector']
+
+nn_processes = ['namenode','journalnode']
+
+ports = [ 6443,8080,8088,9000 ]
+
+rubix_processes = ['acume','editservice','tomcat']
+
+rubix_pm_processes = ['rubix']
+
+baseJobs = [ 'NrmcaJob']
+
+job_time_threshold = 20

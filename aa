@@ -1,0 +1,38 @@
+Checkpoints:
+Collector data is continuously coming and no drop  => Script is already present 
+All the IBs are ready for NRMCA job for the duration of job runs
+NRMCA job is running continuously and time taken by each iteration is similar; no abnormal timings.
+Acume is running continuously & no executors are getting killed. 
+All the points are present in disk/cache in sync with job output.
+UI data time ranges are in live and in sync with acume.   ..
+Feed coming with constant kfps  
+Define threshold for alerting
+Static IBs are present in the directory which is mentioned in the editservice
+Detrmine issues from logs
+check data nodes are up in hadoop cluster and for resource manager as well
+use iperf
+use ‘sar’
+check swap memory
+trans_ib,wire_ib,routerint_ib,router_configs,snmp_configs,dns_in,interfaceib,size_of_ibs check
+cleanup add aswell, divide it into <cron><annotationjob><Ib job>,check size of result as well
+check annotation drop reasons and compare with previous day to report anomalies b) Check if a particular job failed ; if it does then parse the logs and print it and alert
+check if job timing is consistent
+check data availablity ; getAvailability call
+Check that all VRFs are presnt in VRF IBs , NFs are presnt in NF IBs, vrfDrop file check,router file and element file
+rrcache disabled
+editcli properties
+spark.properties
+
+HDFS usage is optimal       => Script is already present. -> done
+Network Connectivity among the cluster is fine. -> done 
+CPU/Mem usage for are optimal in the cluster nodes. -> done
+All the processes(edit service/acume etc) are running. -> done
+Check both Coll/Samplicator process are running -> done
+Disk capacity is below certain threshold -> done
+data corruption -> done
+safe mode -> done
+SAN issues -> done
+rubix(acume,editservice),collector,psql,samplicator,tomcat,namenode,datanode,resourcemanager,nodemanager,journalnode,secondaryNameNode -> done
+Feed coming on both Collectors -> Done
+Reasons for drop if any -> Done
+

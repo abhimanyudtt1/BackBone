@@ -1,0 +1,15 @@
+[BR-VM-NN1]
+type=namenode,collector,rubix
+ip=192.168.115.108
+hops=192.168.115.116,192.168.115.114
+
+
+[BR-VM-NN2]
+type=namenode,collector,rubix
+ip=192.168.115.109
+hops=192.168.115.116,192.168.115.114
+
+[BR-VM-DN2]
+type=datanode
+ip=192.168.115.112
+hops=192.168.115.116,192.168.115.114
